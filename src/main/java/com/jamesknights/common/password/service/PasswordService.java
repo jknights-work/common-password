@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jamesknights.common.password.service;
+package com.jamesknights.common.password.service;
 
 import com.jamesknights.common.service.Service;
 

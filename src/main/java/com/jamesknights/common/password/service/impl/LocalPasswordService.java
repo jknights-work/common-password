@@ -5,7 +5,7 @@
  */
 package com.jamesknights.common.password.service.impl;
 
-import jamesknights.common.password.service.PasswordService;
+import com.jamesknights.common.password.service.PasswordService;
 
 /**
  *

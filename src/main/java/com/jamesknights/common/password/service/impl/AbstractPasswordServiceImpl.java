@@ -5,16 +5,22 @@
  */
 package com.jamesknights.common.password.service.impl;
 
+import com.jamesknights.common.java.configuration.JPAConfiguration;
 import com.jamesknights.common.service.impl.AbstractService;
-import jamesknights.common.password.service.PasswordService;
+import com.jamesknights.common.password.service.PasswordService;
 import org.apache.log4j.Logger;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+import org.springframework.test.context.ContextConfiguration;
 
 
 /**
  *
  * @author James Knights <james@i-studio.co.uk>
  */
+@Service
+@ContextConfiguration(
+  classes = { JPAConfiguration.class })
 public abstract class AbstractPasswordServiceImpl extends AbstractService implements PasswordService {
     
     private static final Logger LOG = Logger.getLogger(AbstractPasswordServiceImpl.class);
